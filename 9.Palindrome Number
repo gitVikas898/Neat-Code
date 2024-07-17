@@ -1,0 +1,26 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        int temp = 0;
+        int newX = x;
+        if(newX==0) return true;
+        else{
+            while(newX>0)
+            {
+
+            int modulo = newX%10;
+            temp = temp*10+modulo;
+            newX=newX/10;
+        
+            if(temp==x)
+             {
+            return true;
+                }
+        
+            }   
+    }
+        return false;
+
+
+        
+    }
+}
